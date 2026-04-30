@@ -1,0 +1,15 @@
+def count_vowels_and_consonants(text: str) -> dict:
+    unli = "aeiouAEIOU"
+    unli_count,undosh_count = 0,0
+    
+    for harf in text:
+        if harf in unli:
+            unli_count += 1
+        else:
+            undosh_count+=1
+    
+    return {"unli": unli_count, "undosh":undosh_count}
+
+
+matn=input("matn kiriting:\n")
+print(count_vowels_and_consonants(matn))
