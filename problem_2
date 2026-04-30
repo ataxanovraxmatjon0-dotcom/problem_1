@@ -1,0 +1,9 @@
+def find_top_seller(products: dict, sales: dict) -> str:
+    
+    return str(max(products,key=lambda n: products[n]*sales[n]))
+
+
+print(find_top_seller(
+    {"Olma": 5000, "Banan": 8000, "Uzum": 7000},
+    {"Olma": 10,   "Banan": 5,    "Uzum": 8}
+))
